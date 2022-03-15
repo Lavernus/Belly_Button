@@ -80,8 +80,8 @@ function buildCharts(sample) {
       {x: sampleValues.slice(0,10),
       y: yticks,
       type: 'bar',
-      text: otuLabels.slice(0,10)
-      Orientation: 'h'}
+      text: otuLabels.slice(0,10),
+      orientation: 'h'}
     ];
     // 9. Create the layout for the bar chart. 
     var barLayout = {
