@@ -73,7 +73,7 @@ function buildCharts(sample) {
     // Hint: Get the the top 10 otu_ids and map them in descending order  
     //  so the otu_ids with the most bacteria are last. 
 
-    var yticks = otuIds.slice(0, 10).map(ids => ids.sort((a,b) => a -b)).reverse();
+    var yticks = otuIds.slice(0, 10).map(ids => otuIds.otu_ids).reverse();
     console.log(yticks)
     // 8. Create the trace for the bar chart. 
     var barData = [
